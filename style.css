@@ -1,0 +1,11 @@
+body {
+    background-color: red;
+    margin: 10%;
+}
+
+h1 {
+    color: white;
+    font-size: 28px;
+    font-family: Arial;
+    margin-left: 100px;
+}

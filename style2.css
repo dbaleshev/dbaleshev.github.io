@@ -1,15 +1,56 @@
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:link {
+    color: #00abab;
+}
+
+a:visited {
+    color: #ffdd00;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000066;
+}
+
+a:active {
+    color: #990000;
+}
+
 h1 {
     background-color:#008080;
     color:#f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
 }
 
 h2 {
     background-color:#00abab;
     color:#f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
 }
 
 body {
     background-color:#f2ffff;
     color:#6a6a6a;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 10px
 }
 
+p {
+    background-color:#f2ffff;
+    color:#6a6a6a;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 10px;
+}

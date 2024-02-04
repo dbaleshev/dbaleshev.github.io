@@ -16,7 +16,6 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
     color: #5bc2f4;
 }
 
@@ -43,15 +42,15 @@ body {
     color:#6a6a6a;
     font-family: Arial;
     font-size: 12px;
-    margin: 10px
+    margin: 11px
 }
 
 p {
     background-color:#f2ffff;
     color:#6a6a6a;
-    font-family: Arial;
+    font-family: Arial, sans;
     font-size: 12px;
-    margin: 10px;
+    margin: 11px;
 }
 
 table {

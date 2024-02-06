@@ -1,6 +1,6 @@
 var greeting = "Hello ";
 
-var name = "Class";
+var name = "Class"; //we are defining name here
 
 alert(greeting + name);
 

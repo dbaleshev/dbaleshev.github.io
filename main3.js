@@ -14,14 +14,14 @@ window.onclick = function(event) {
     }
 }
 
-function mOver(some_tag) {
-    some_tag.innerHTML = "Thank You";
-    some_tag.style.color = "blue";
+function mOut(some_tag) {
+    some_tag.innerHTML = "Mouse over the text";
+    some_tag.style.color = "orange";
 }
 
-function mOut(some_tag) {
-    some_tag.innerHTML = "Mouse Over Me";
-    some_tag.style.color = "orange";
+function mOver(some_tag) {
+    some_tag.innerHTML = "Hire Me";
+    some_tag.style.color = "blue";
 }
 
 window.onload = function() {

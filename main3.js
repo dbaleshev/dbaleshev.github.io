@@ -14,11 +14,6 @@ window.onclick = function(event) {
     }
 }
 
-
-function hiName() {
-    alert("Hello!");
-}
-
 function mOver(some_tag) {
     some_tag.innerHTML = "Thank You";
     some_tag.style.color = "blue";
@@ -28,3 +23,15 @@ function mOut(some_tag) {
     some_tag.innerHTML = "Mouse Over Me";
     some_tag.style.color = "orange";
 }
+
+window.onload = function() {
+    var nameButton = document.getElementById("nameButton");
+    var outputEl = document.getElementById("output");
+
+nameButton.onclick = function() {
+    var name = prompt("Please enter your name:");
+    var message = "Hello, " + name + "! Welcome to my Online Portfolio.";
+    outputEl.textContent = message;
+};
+};
+

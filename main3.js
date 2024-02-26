@@ -24,14 +24,9 @@ function mOver(some_tag) {
     some_tag.style.color = "blue";
 }
 
-window.onload = function() {
-    var nameButton = document.getElementById("nameButton");
-    var outputEl = document.getElementById("output");
-
-nameButton.onclick = function() {
+function myFunction() {
     var name = prompt("Please enter your name:");
+    var output = document.getElementById("output");
     var message = "Hello, " + name + "! Welcome to my Online Portfolio.";
-    outputEl.textContent = message;
-};
-};
-
+    output.textContent = message;
+}

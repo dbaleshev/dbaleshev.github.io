@@ -24,9 +24,10 @@ function mOver(some_tag) {
     some_tag.style.color = "blue";
 }
 
+
 function myFunction() {
     var name = prompt("Please enter your name:");
     var output = document.getElementById("output");
     var message = "Hello, " + name + "! Welcome to my Online Portfolio.";
-    output.textContent = message;
+    output.textContent = message;   // Reference: OpenAl. (2024). ChatGPT (February 2024 version) [Large language model]. Code correctness check. https://chat.openai.com/chat
 }

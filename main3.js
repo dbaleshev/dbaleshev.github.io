@@ -25,7 +25,7 @@ function mOver(some_tag) {
 }
 
 
-function myFunction() {
+function anotherFunction() {
     var name = prompt("Please enter your name:");
     var output = document.getElementById("output");
     var message = "Hello, " + name + "! Welcome to my Online Portfolio.";

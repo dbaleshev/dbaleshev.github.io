@@ -97,3 +97,14 @@ img {
 .show {
     display:block;
     }
+
+    .likert {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+      }
+      
+      .likert li {
+        text-align: center; /* Centers the text within each list item */
+      }

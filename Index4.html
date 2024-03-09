@@ -39,25 +39,58 @@
 <blockquote>
     <form>
         <form id="myform">
-            <p>
-            <input id="username" type="text" value="abc"> text
-            </p>
-            <p>
-            <input type="password" value="abc"> password
-            </p>
-            <p>
-            <input type="checkbox">
-            <input type="checkbox" checked> checkbox
-            </p>
-            <p>
-            <input type="radio" value="A" name="choice">
-            <input type="radio" value="B" name="choice" checked> radio buttons
-            </p>
-            <p>
-            <input type="submit" value="Submit">
-            <input type="reset">
-            </p>
-            </form>
+            <p><strong><u>Please respond to questions listed below:</u></strong></p>
+            <form action="/action_page.php"> 
+                <p>
+                    <label for="fname">What is Your Full name?</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                </p>
+                <p>
+                    <label for="position">What is your current role within the organization?</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                </p>
+                <p>
+                <label for="experience">How many years of experience do you have in recruitment?</label><br>
+                    <select name="experience">
+                    <option value="0 to 3 years">0 to 3 years</option>
+                    <option value="4 to 6 years">4 to 6 years</option>
+                    <option value="7 to 9 years">7 to 9 years</option>
+                    <option value="10+ years">10+ years</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="edulevel">In your experience, what level of education is required to be a business analyst?</label><br>
+                    <textarea name="message" rows="10" cols="30">
+                    </textarea>
+                </p>
+                <p>
+                    <label for="skills">What are the key skills needed for a Business Analyst?</label><br>
+                    <input type="checkbox" id="skills1" name="skills" value="Data Analysis (SQL, Python, Tableau, Power BI)"> Data Analysis (SQL, Python, Tableau, Power BI)<br>
+                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Process Modeling and Analysis (UML, BPMN, DBMS)<br>
+                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Agile Methodologies ( Scrum or Kanban)<br>
+                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Prototyping and Wireframing (interactive prototypes, wireframes, and mock-ups)<br>
+                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Knowledge of ERP and CRM Systems<br>
+                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Software Development Life Cycle (SDLC)<br>
+                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Basic Computer Skills ( Excel, Word, etc.)<br>
+                </p>                
+                <p>
+                    <label for="certification">Choose one: What are the key certifications needed for a Business Analyst? </label><br>
+                    <input type="radio" id="bac" name="choice" value="Business Analysis Certification (BAC)">
+                    <label for="bac">Business Analysis Certification (BAC)</label><br>
+                    <input type="radio" id="ecba" name="choice" value="Entry Certification in Business Analysis (ECBA)">
+                    <label for="ecba">Entry Certification in Business Analysis (ECBA)</label><br>
+                    <input type="radio" id="ccba" name="choice" value="Certification of Competency in Business Analysis (CCBA)">
+                    <label for="ccba">Certification of Competency in Business Analysis (CCBA)</label><br>
+                </p>
+                <p>
+                    <label for="date">Enter today's date:</label><br>
+                    <input type="date" id="date" name="date"><br>
+                </p>
+                <p>
+                <input type="submit" value="Submit">
+                <input type="reset">
+                </p>
+                </form>
     </form>
 </blockquote>
 

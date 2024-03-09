@@ -3,8 +3,8 @@
 <head>
 <title>Online Portfolio For ITM780</title>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="Style3.css">
-<script src="main3.js"></script>
+<link rel="stylesheet" type="text/css" href="Style4.css">
+<script src="main4.js"></script>
 </head>
 <body>
 
@@ -37,20 +37,18 @@
 
  <h2>Online Form Questionnaire</h2>  <!--Underscored FORM section-->
 <blockquote>
-    <form>
-        <form id="myform">
+    <form class="back" id="myForm">
             <p><strong><u>Please respond to questions listed below:</u></strong></p>
-            <form action="/action_page.php"> 
                 <p>
-                    <label for="fname">What is Your Full name?</label><br>
-                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="funame" class="bold-label">What is your full name?</label><br>
+                    <input type="text" id="funame" name="funame" placeholder="Dmitry Baleshev" value="" oninput="inputHandler('myinput')"><br>
                 </p>
                 <p>
-                    <label for="position">What is your current role within the organization?</label><br>
-                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="position" class="bold-label">What is your current role within the organization?</label><br>
+                    <input type="text" id="position" name="position" placeholder="Human Resource" value=""><br>
                 </p>
                 <p>
-                <label for="experience">How many years of experience do you have in recruitment?</label><br>
+                <label for="experience" class="bold-label">How many years of experience do you have in recruitment?</label><br>
                     <select name="experience">
                     <option value="0 to 3 years">0 to 3 years</option>
                     <option value="4 to 6 years">4 to 6 years</option>
@@ -59,21 +57,21 @@
                     </select>
                 </p>
                 <p>
-                    <label for="edulevel">In your experience, what level of education is required to be a business analyst?</label><br>
-                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <label for="edulevel" class="bold-label">In your experience, what level of education is typically required for a Business Analyst?</label><br>
+                    <textarea name="edulevel" rows="10" cols="30" placeholder="Business Technology Management - BComm (Hons)"></textarea>
                 </p>
                 <p>
-                    <label for="skills">What are the key skills needed for a Business Analyst?</label><br>
+                    <label for="skills" class="bold-label">What are the key skills needed for a Business Analyst?</label><br>
                     <input type="checkbox" id="skills1" name="skills" value="Data Analysis (SQL, Python, Tableau, Power BI)"> Data Analysis (SQL, Python, Tableau, Power BI)<br>
                     <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Process Modeling and Analysis (UML, BPMN, DBMS)<br>
-                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Agile Methodologies ( Scrum or Kanban)<br>
-                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Prototyping and Wireframing (interactive prototypes, wireframes, and mock-ups)<br>
-                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Knowledge of ERP and CRM Systems<br>
-                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Software Development Life Cycle (SDLC)<br>
-                    <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)"> Basic Computer Skills ( Excel, Word, etc.)<br>
+                    <input type="checkbox" id="skills3" name="skills" value="Agile Methodologies ( Scrum or Kanban)"> Agile Methodologies ( Scrum or Kanban)<br>
+                    <input type="checkbox" id="skills4" name="skills" value="Prototyping and Wireframing (interactive prototypes, wireframes, and mock-ups)"> Prototyping and Wireframing (interactive prototypes, wireframes, and mock-ups)<br>
+                    <input type="checkbox" id="skills5" name="skills" value="Knowledge of ERP and CRM Systems"> Knowledge of ERP and CRM Systems<br>
+                    <input type="checkbox" id="skills6" name="skills" value="Software Development Life Cycle (SDLC)"> Software Development Life Cycle (SDLC)<br>
+                    <input type="checkbox" id="skills7" name="skills" value="Basic Computer Skills ( Excel, Word, etc.)"> Basic Computer Skills ( Excel, Word, etc.)<br>
                 </p>                
                 <p>
-                    <label for="certification">Choose one: What are the key certifications needed for a Business Analyst? </label><br>
+                    <label for="certification" class="bold-label">Choose one: What are the key certifications needed for a Business Analyst? </label><br>
                     <input type="radio" id="bac" name="choice" value="Business Analysis Certification (BAC)">
                     <label for="bac">Business Analysis Certification (BAC)</label><br>
                     <input type="radio" id="ecba" name="choice" value="Entry Certification in Business Analysis (ECBA)">
@@ -82,23 +80,28 @@
                     <label for="ccba">Certification of Competency in Business Analysis (CCBA)</label><br>
                 </p>
                 <p>
-                    <label for="resume">Please upload an example of a BA job posting:</label><br>
-                    <input type="file" id="myfile" name="myfile">
+                    <label for="resume" class="bold-label">Please upload an example of a Business Analyst job posting:</label><br>
+                    <input type="file" id="resume" name="myfile">
                 </p>
                 <p>
-                <label for="rate">From 1 to 10, where 1 is min and 10 is max, how would you rate my online portfolio?</label><br>
-                <input type="number" name="quantity" min="1" max="10">
+                    <label for="favcolour" class="bold-label">In your opinion, what is the best colour for an Online Portfolio?</label><br>
+                    <input type="color" id="favcolour" name="favcolour" value="#ff0000">
                 </p>
                 <p>
-                    <label for="date">Enter today's date:</label><br>
+                <label for="rate" class="bold-label">From 1 to 10, where 1 is min and 10 is max, how would you rate my Online Portfolio?</label><br>
+                <input type="number" name="rate" placeholder="10" min="1" max="10">
+                </p>
+                <p>
+                    <label for="date" class="bold-label">Enter today's date (YYYY-MM-DD):</label><br>
                     <input type="date" id="date" name="date"><br>
                 </p>
                 <p>
                 <input type="submit" value="Submit">
                 <input type="reset">
                 </p>
-                </form>
     </form>
+
+    <p id="emptyParagraph">Dynamically change on webpage input without prompt</p>
 </blockquote>
 
 <h2>Co-Op Experience</h2>  <!--Underscored Co-Op section-->

@@ -98,13 +98,12 @@ img {
     display:block;
     }
 
-    .likert {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-      }
-      
-      .likert li {
-        text-align: center; /* Centers the text within each list item */
-      }
+.back {
+    color:#f2ffff;
+    }
+    
+.bold-label {
+        font-weight: bold;
+        color:#008080;
+        font-size: 15px;
+    }

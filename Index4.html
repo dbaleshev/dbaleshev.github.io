@@ -40,19 +40,19 @@
     <form class="back" id="myForm"> <!--Creating Form-->
             <p><strong><u>Please respond to questions listed below:</u></strong></p>
             <p>
-                <label for="funame" class="bold-label">What is your full name?</label><br>
+                <label for="funame" class="bold-label">What is your full name?</label><br> <!--Simple input box-->
                 <input type="text" id="funame" name="funame" placeholder="Dmitry Baleshev" value="" oninput="inputHandler()"><br> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_input_placeholder-->
-                <p id="fullnameOutput"></p>
+                <p id="fullnameOutput"></p> <!--dynamic content-->
             </p>  
             
             <p>
-                <label for="positionInput" class="bold-label">What is your current role within the organization?</label><br>
+                <label for="positionInput" class="bold-label">What is your current role within the organization?</label><br> <!--Simple input box-->
                 <input type="text" id="positionInput" name="position" placeholder="Human Resource" value="" oninput="inputHandler()"><br>
                 <p id="positionOutput"></p>
             </p>                
             
             <p>
-                <label for="experience" class="bold-label">How many years of experience do you have in recruitment?</label><br>
+                <label for="experience" class="bold-label">How many years of experience do you have in recruitment?</label><br> <!--Dropdown questions-->
                 <select id="experience" name="experience" oninput="inputHandler()">
                     <option value="0 to 3 years">0 to 3 years</option>
                     <option value="4 to 6 years">4 to 6 years</option>
@@ -63,13 +63,13 @@
             </p>
             
             <p>
-                <label for="edulevel" class="bold-label">In your experience, what level of education is typically required for a Business Analyst?</label><br>
+                <label for="edulevel" class="bold-label">In your experience, what level of education is typically required for a Business Analyst?</label><br> <!--Input box - multiple lines-->
                 <textarea id="edulevel" name="edulevel" rows="10" cols="30" placeholder="Business Technology Management - BComm (Hons)" oninput="inputHandler()"></textarea> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_textarea-->
                 <p id="edulevelOutput"></p>
             </p>                             
             
             <p>
-                <label for="skills" class="bold-label">What are the key skills needed for a Business Analyst?</label><br>
+                <label for="skills" class="bold-label">What are the key skills needed for a Business Analyst?</label><br> <!--checkbox questions-->
                 <input type="checkbox" id="skills1" name="skills" value="Data Analysis (SQL, Python, Tableau, Power BI)" oninput="inputHandler()"> Data Analysis (SQL, Python, Tableau, Power BI)<br>
                 <input type="checkbox" id="skills2" name="skills" value="Process Modeling and Analysis (UML, BPMN, DBMS)" oninput="inputHandler()"> Process Modeling and Analysis (UML, BPMN, DBMS)<br>
                 <input type="checkbox" id="skills3" name="skills" value="Agile Methodologies (Scrum or Kanban)" oninput="inputHandler()"> Agile Methodologies (Scrum or Kanban)<br>
@@ -81,7 +81,7 @@
             </p>                
             
             <p>
-                <label for="certification" class="bold-label">Choose one: What are the key certifications needed for a Business Analyst? </label><br> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio-->
+                <label for="certification" class="bold-label">Choose one: What are the key certifications needed for a Business Analyst? </label><br> <!--Radio selection questions--> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio-->
                 <input type="radio" id="bac" name="choice" value="Business Analysis Certification (BAC)" oninput="inputHandler()">
                 <label for="bac">Business Analysis Certification (BAC)</label><br>
                 <input type="radio" id="ecba" name="choice" value="Entry Certification in Business Analysis (ECBA)" oninput="inputHandler()">
@@ -92,31 +92,31 @@
             </p>
             
             <p>
-                <label for="resume" class="bold-label">Please upload an example of a Business Analyst job posting:</label><br> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_file-->
+                <label for="resume" class="bold-label">Please upload an example of a Business Analyst job posting:</label><br> <!--upload file--><!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_file-->
                 <input type="file" id="resume" name="myfile" onchange="inputHandler()">
                 <p id="resumeOutput"></p>
             </p>
             
             <p>
-                <label for="favcolour" class="bold-label">In your opinion, what is the best colour for an Online Portfolio?</label><br> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color-->
+                <label for="favcolour" class="bold-label">In your opinion, what is the best colour for an Online Portfolio?</label><br> <!--choose colour--> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_color-->
                 <input type="color" id="favcolour" name="favcolour" value="#ff0000" oninput="inputHandler()">
                 <p id="favcolourOutput"></p>
             </p>
             
             <p>
-                <label for="rate" class="bold-label">From 1 to 10, where 1 is min and 10 is max, how would you rate my Online Portfolio?</label><br>  <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_number-->
+                <label for="rate" class="bold-label">From 1 to 10, where 1 is min and 10 is max, how would you rate my Online Portfolio?</label><br> <!--from 1 to 10 limit--><!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_number-->
                 <input type="number" id="rate" name="rate" placeholder="10" min="1" max="10" oninput="inputHandler()">
                 <p id="rateOutput"></p>
             </p>
 
             <p>
-            <label for="vol" class="bold-label">How would you rate the quality of the content from 1 to 100, where 1 is min and 100 is max?</label><br> <!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_range-->
+            <label for="vol" class="bold-label">How would you rate the quality of the content from 1 to 100, where 1 is min and 100 is max?</label><br> <!--from 1 to 100 limit--><!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_range-->
             <input type="range" id="vol" name="vol" min="1" max="100" oninput="inputHandler()"><br>
             <p id="voluneraneoutput"></p>
             </p>
             
             <p>
-                <label for="date" class="bold-label">Enter today's date (YYYY-MM-DD):</label><br> <!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date-->
+                <label for="date" class="bold-label">Enter today's date (YYYY-MM-DD):</label><br> <!--pick date--><!--W3Schools. (n.d.). Tryit Editor v3.7.  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_date-->
                 <input type="date" id="date" name="date" oninput="inputHandler()"><br>
                 <p id="dateOutput"></p>
             </p>
@@ -127,7 +127,6 @@
             </p>
     </form>
 
-    <p id="emptyParagraph">Dynamically change on webpage input without prompt</p>
 </blockquote>
 
 <h2>Co-Op Experience</h2>  <!--Underscored Co-Op section-->

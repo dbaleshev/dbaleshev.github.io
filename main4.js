@@ -33,34 +33,65 @@ function anotherFunction() {
 }
 
 
-
-
 window.onload = function() {
-    var user = document.getElementById("funame");
-    console.log(user.value); // the user input value.
-    console.log(user.type); // the type of the form element.
+    document.getElementById("myForm").addEventListener("input", inputHandler);  // Reference: OpenAl. (2024). ChatGPT (March 2024 version) [Large language model]. Adding input event listener based on guidance from ChatGPT. https://chat.openai.com/chat
 }
 
-function inputHandler() {
-    var myvalue = document.getElementById("funame").value;
-    document.getElementById("emptyParagraph").innerHTML = "Your Input: " + myvalue;
-}
 
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+    function inputHandler() {
+        var fullName = document.getElementById("funame").value;
+        document.getElementById("fullnameOutput").innerHTML = "Your Input for Full Name is: " + fullName;
+        localStorage.setItem("fullName", fullName); // Reference: OpenAl. (2024). ChatGPT (March 2024 version) [Large language model]. Replaced from back of the JS to here. https://chat.openai.com/chat
+        console.log(localStorage.getItem("fullName")); 
 
-    // Store input values in localStorage
-    var formElements = document.getElementById("myForm").elements;
-    for (var i = 0; i < formElements.length; i++) {
-        var element = formElements[i];
-        if (element.type !== "submit" && element.type !== "reset") {
-            localStorage.setItem(element.name, element.value);
-        }
+        var position = document.getElementById("positionInput").value;
+        document.getElementById("positionOutput").innerHTML = "Your Input for Current Role: " + position;
+        localStorage.setItem("currentPosition", position);
+        console.log(localStorage.getItem("currentPosition"));
+    
+        var experience = document.getElementById("experience").value;
+        document.getElementById("experienceOutput").innerHTML = "Your Input for Experience: " + experience;
+        localStorage.setItem("experience", experience);
+        console.log(localStorage.getItem("experience"));
+    
+        var edulevel = document.getElementById("edulevel").value;
+        document.getElementById("edulevelOutput").innerHTML = "Your Input for Education Level: " + edulevel;
+        localStorage.setItem("edulevel", edulevel);
+        console.log(localStorage.getItem("edulevel"));
+    
+        var skills = []; // Reference: OpenAl. (2024). ChatGPT (March 2024 version) [Large language model]. Used to resolve an issue with saving multiple selections from the form. https://chat.openai.com/chat
+        var skillsInputs = document.getElementsByName("skills");
+        skillsInputs.forEach(function(input) {
+            if (input.checked) {
+                skills.push(input.value);
+            }
+        });
+    
+        document.getElementById("skillsOutput").innerHTML = "Your Selected Skills: " + skills.join(", ");
+        localStorage.setItem("skills", skills.join(", "));
+        console.log(localStorage.getItem("skills"));
+    
+        var certification = document.querySelector('input[name="choice"]:checked')?.value || "";
+        document.getElementById("certificationOutput").innerHTML = "Your Selected Certification: " + certification;
+        localStorage.setItem("certification", certification);
+        console.log(localStorage.getItem("certification"));
+
+        var favcolour = document.getElementById("favcolour").value;
+        document.getElementById("favcolourOutput").innerHTML = "Your Favorite Color is: " + favcolour;
+        localStorage.setItem("favcolour", favcolour);
+        console.log(localStorage.getItem("favcolour"));
+        
+        var rate = document.getElementById("rate").value;
+        document.getElementById("rateOutput").innerHTML = "Your Rating: " + rate;
+        localStorage.setItem("rate", rate);
+        console.log(localStorage.getItem("rate"));
+
+        var volume = document.getElementById("vol").value;
+        document.getElementById("voluneraneoutput").textContent = "Your rating for the content quality is: " + volume;
+        localStorage.setItem("contentQualityRating", volume);
+        
+        var date = document.getElementById("date").value;
+        document.getElementById("dateOutput").innerHTML = "Today's Date is: " + date;
+        localStorage.setItem("date", date);
+        console.log(localStorage.getItem("date"));
     }
-
-    // Log stored values to the console
-    for (var j = 0; j < localStorage.length; j++) {
-        var key = localStorage.key(j);
-        console.log(key + ": " + localStorage.getItem(key));
-    }
-});

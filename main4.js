@@ -67,11 +67,11 @@ window.onload = function() {
             }
         });
     
-        document.getElementById("skillsOutput").innerHTML = "Your Selected Skills: " + skills.join(", ");
+        document.getElementById("skillsOutput").innerHTML = "Your Selected Skills: " + skills.join(", "); // Reference: OpenAl. (2024). ChatGPT (March 2024 version) [Large language model]. Used to resolve an issue with saving multiple selections from the form. https://chat.openai.com/chat
         localStorage.setItem("skills", skills.join(", "));
         console.log(localStorage.getItem("skills"));
     
-        var certification = document.querySelector('input[name="choice"]:checked')?.value || "";
+        var certification = document.querySelector('input[name="choice"]:checked')?.value || ""; // Reference: OpenAl. (2024). ChatGPT (March 2024 version) [Large language model]. Used to resolve an issue with saving radio selection. https://chat.openai.com/chat
         document.getElementById("certificationOutput").innerHTML = "Your Selected Certification: " + certification;
         localStorage.setItem("certification", certification);
         console.log(localStorage.getItem("certification"));

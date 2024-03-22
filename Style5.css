@@ -1,0 +1,162 @@
+nav li {
+    display: inline;
+}
+
+nav a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:link {
+    color: #1B5FAA;
+}
+
+a:visited {
+    color: #ffdc00;
+}
+
+a:hover {
+    color: #5bc2f4;
+}
+
+a:active {
+    color: #7474c1;
+}
+
+h1 {
+    background-color:#008080;
+    color:#f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    background-color:#00abab;
+    color:#f8f8f8;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+body {
+    background-color:#f2ffff;
+    color:#6a6a6a;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 11px
+}
+
+p {
+    background-color:#f2ffff;
+    color:#6a6a6a;
+    font-family: Arial, sans;
+    font-size: 12px;
+    margin: 11px;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+td {
+    border: 1px solid #00abab;
+    padding: 10px;
+  }
+
+img {
+    width: 100px;
+    height: 150px;
+}
+
+.dropbtn {
+    font-size: 20px;
+    margin: 11px;
+    }
+
+.dropdown {
+    position: relative;
+    float: right;
+    display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    margin: 11px;
+    }
+
+.dropdown-content a {
+    display: block;
+    }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+    }
+
+.show {
+    display:block;
+    }
+
+.back {
+    color:#f2ffff;
+    }
+    
+.bold-label {
+        font-weight: bold;
+        color:#008080;
+        font-size: 15px;
+    }
+
+
+
+
+/*W3Schools. (n.d.). Basic Button Styling. https://www.w3schools.com/css/css3_buttons.asp */
+.font-size-accessibility button {
+    background-color: #00abab;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.color-blindness {
+    background-color: #00abab;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.color-blind-1 {
+    background-color: #e1daae;
+    color: #2d3142;
+}
+
+.color-blind-2 {
+    background-color: #dbd8c7;
+    color: #303136;
+}
+
+.color-blind-3 {
+    background-color: #e8f086;
+    color: #235fa4;
+}
+
+.color-blind-4 {
+    background-color: #003e51;
+    color: #000000;
+}
+
+.color-blind-5 {
+    background-color: 	#87189d;
+    color: #8e9fbc
+}

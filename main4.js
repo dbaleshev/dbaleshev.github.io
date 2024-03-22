@@ -95,3 +95,5 @@ window.onload = function() {
         localStorage.setItem("date", date);
         console.log(localStorage.getItem("date"));
     }
+
+    
